@@ -65,7 +65,7 @@ def minimax_game(depth):
                         drop_piece(board, row, col, PLAYER_PIECE)
 
                         if winning_move(board, PLAYER_PIECE):
-                            label = font.render("Player 1 wins!!", True, RED)
+                            label = font.render("Computer wins!!", True, RED)
                             screen.blit(label, (40, 10))
                             pygame.display.update()
                             game_over = True
@@ -87,7 +87,7 @@ def minimax_game(depth):
                 drop_piece(board, row, col, AI_PIECE)
 
                 if winning_move(board, AI_PIECE):
-                    label = font.render("Player 2 wins!!", True, YELLOW)
+                    label = font.render("AI Agent wins!!", True, YELLOW)
                     screen.blit(label, (40, 10))
                     pygame.display.update()
                     game_over = True
@@ -153,7 +153,7 @@ def alpha_bete_game(depth):
                         drop_piece(board, row, col, PLAYER_PIECE)
 
                         if winning_move(board, PLAYER_PIECE):
-                            label = font.render("Player 1 wins!!", True, RED)
+                            label = font.render("Computer wins!!", True, RED)
                             screen.blit(label, (40, 10))
                             pygame.display.update()
                             game_over = True
@@ -175,7 +175,7 @@ def alpha_bete_game(depth):
                 drop_piece(board, row, col, AI_PIECE)
 
                 if winning_move(board, AI_PIECE):
-                    label = font.render("Player 2 wins!!", True, YELLOW)
+                    label = font.render("AI Agent wins!!", True, YELLOW)
                     screen.blit(label, (40, 10))
                     pygame.display.update()
                     game_over = True
